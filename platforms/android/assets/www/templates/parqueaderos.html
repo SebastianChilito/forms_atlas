@@ -1,0 +1,61 @@
+<ion-view title="Parqueaderos" id="page4">
+<ion-content ng-controller="ExampleController" padding="true">
+    <ion-content padding="true" class="has-header">
+        <div>
+            <img src="img/HeDk7rTRSCaQAyD17DPA_atlas2.jpg" width="100%" height="auto" style="display: block; margin-left: auto; margin-right: auto;">
+        </div>
+        <form class="list">
+            <label class="item item-input">
+                <span class="input-label">Fecha</span>
+                <input type="date" placeholder="">
+            </label>
+            <label class="item item-input">
+                <span class="input-label">Nombre Guarda</span>
+                <input type="text" placeholder="">
+            </label>
+            <label class="item item-input">
+                <span class="input-label">Numero Cedula</span>
+                <input type="text" placeholder="">
+            </label>
+            <label class="item item-input">
+                <span class="input-label">Turno</span>
+                <input type="text" placeholder="">
+            </label>
+            <label class="item item-input">
+                <span class="input-label">Placa</span>
+                <input type="text" placeholder="">
+            </label>
+            <label class="item item-input">
+                <span class="input-label">Hora Entrada</span>
+                <input type="text" placeholder="">
+            </label>
+            <label class="item item-input">
+                <span class="input-label">Hora Salida</span>
+                <input type="text" placeholder="">
+            </label>
+            <form class="list">
+                <ion-toggle toggle-class="toggle-positive">Plumillas</ion-toggle>
+                <ion-toggle toggle-class="toggle-positive">Vidrios</ion-toggle>
+                <ion-toggle toggle-class="toggle-positive">Espejos</ion-toggle>
+                <ion-toggle toggle-class="toggle-positive">Tapa Gasolina</ion-toggle>
+                <ion-toggle toggle-class="toggle-positive">Stops</ion-toggle>
+                <ion-toggle toggle-class="toggle-positive">Farolas</ion-toggle>
+                <ion-toggle toggle-class="toggle-positive">Llanta Repuesto</ion-toggle>
+                <ion-toggle toggle-class="toggle-positive">Radio</ion-toggle>
+                <ion-toggle toggle-class="toggle-positive">Abolladuras</ion-toggle>
+                <ion-toggle toggle-class="toggle-positive">Copas</ion-toggle>
+                <ion-toggle toggle-class="toggle-positive">Antena</ion-toggle>
+                <label class="item item-input">
+                    <span class="input-label">Observaciones</span><textarea placeholder=""> </textarea>
+                </label>
+
+                <button class="button button-full button-assertive" ng-click="takePhoto()">Take Photo</button>
+                <img ng-show="imgURI !== undefined" ng-src="{{imgURI}}" style="text-align: center">
+
+                <a href="tel:" id="parqueaderos-button10" style="border-radius:15px 15px 15px 15px;" class="button button-positive  button-block icon-left ion-android-camera">Tomar Foto</a>
+                <a href="mailto:juancaaa2@gmail.com" id="parqueaderos-button11" style="border-radius:15px 15px 15px 15px;" class="button button-positive  button-block icon-left ion-android-send">Enviar</a>
+                <h5 id="parqueaderos-heading1" style="color:#000000;text-align:center;">Nota: Debe advertir al propietarios el vehiculo que no deje objetos dentro del mismo y que informe lo que debe incluirse en el inventario.</h5>
+            </form>
+        </form>
+    </ion-content>
+</ion-view>

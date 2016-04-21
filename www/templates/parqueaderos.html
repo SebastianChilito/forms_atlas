@@ -1,0 +1,58 @@
+<ion-view title="Parqueaderos" id="page4">
+
+    <ion-content padding="true" class="has-header">
+        <div>
+            <img src="img/HeDk7rTRSCaQAyD17DPA_atlas2.jpg" width="100%" height="auto" style="display: block; margin-left: auto; margin-right: auto;">
+        </div>
+        <form class="list" ng-controller="parqueaderosCtrl">
+            <label class="item item-input">
+                <span class="input-label">Fecha</span>
+                <input type="date" placeholder="" ng-model="formPark.fecha">
+            </label>
+            <label class="item item-input">
+                <span class="input-label">Nombre Guarda</span>
+                <input type="text" placeholder="" ng-model="formPark.nombre">
+            </label>
+            <label class="item item-input">
+                <span class="input-label">Numero Cedula</span>
+                <input type="text" placeholder="" ng-model="formPark.cedula">
+            </label>
+            <label class="item item-input">
+                <span class="input-label">Turno</span>
+                <input type="text" placeholder="" ng-model="formPark.turno">
+            </label>
+            <label class="item item-input">
+                <span class="input-label">Placa</span>
+                <input type="text" placeholder="" ng-model="formPark.placa">
+            </label>
+            <label class="item item-input">
+                <span class="input-label">Hora Entrada</span>
+                <input type="text" placeholder="" ng-model="formPark.horaentrada">
+            </label>
+            <label class="item item-input">
+                <span class="input-label">Hora Salida</span>
+                <input type="text" placeholder="" ng-model="form.horasalida">
+            </label>
+            <form class="list"> 
+                <ion-toggle toggle-class="toggle-positive" ng-model="formPark.plumillas">Plumillas</ion-toggle>
+                <ion-toggle toggle-class="toggle-positive" ng-model="formPark.vidrios">Vidrios</ion-toggle>
+                <ion-toggle toggle-class="toggle-positive" ng-model="formPark.espejos">Espejos</ion-toggle>
+                <ion-toggle toggle-class="toggle-positive" ng-model="formPark.tapagasolina">Tapa Gasolina</ion-toggle>
+                <ion-toggle toggle-class="toggle-positive" ng-model="formPark.stops">Stops</ion-toggle>
+                <ion-toggle toggle-class="toggle-positive" ng-model="formPark.farolas">Farolas</ion-toggle>
+                <ion-toggle toggle-class="toggle-positive" ng-model="formPark.llantarepuesto">Llanta Repuesto</ion-toggle>
+                <ion-toggle toggle-class="toggle-positive" ng-model="formPark.radio">Radio</ion-toggle>
+                <ion-toggle toggle-class="toggle-positive" ng-model="formPark.abolladura">Abolladuras</ion-toggle>
+                <ion-toggle toggle-class="toggle-positive" ng-model="formPark.copas">Copas</ion-toggle>
+                <ion-toggle toggle-class="toggle-positive" ng-model="formPark.antena">Antena</ion-toggle>
+                <label class="item item-input">
+                    <span class="input-label">Observaciones</span><textarea placeholder="" ng-model="formPark.observaciones"> </textarea>
+                </label>         
+
+                <a href="tel:" id="parqueaderos-button10" style="border-radius:15px 15px 15px 15px;" class="button button-positive  button-block icon-left ion-android-camera">Tomar Foto</a>
+                <a href="mailto:juancaaa2@gmail.com" id="parqueaderos-button11" style="border-radius:15px 15px 15px 15px;" class="button button-positive  button-block icon-left ion-android-send">Enviar</a>
+                <h5 id="parqueaderos-heading1" style="color:#000000;text-align:center;">Nota: Debe advertir al propietarios el vehiculo que no deje objetos dentro del mismo y que informe lo que debe incluirse en el inventario.</h5>
+            </form>
+        </form>
+    </ion-content>
+</ion-view>
